@@ -1,0 +1,24 @@
+<div class="columns is-multiline">
+  <div class="column is-3" *ngFor="let pokemon of pokemons | async | orderBy:['id']">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="{{pokemon.illustration}}" alt="{{pokemon.name}}">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="{{pokemon.illustration}}" alt="{{pokemon.name}}">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">{{pokemon.name}}</p>
+            <p class="subtitle is-6">{{pokemon.types}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
