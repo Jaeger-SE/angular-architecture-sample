@@ -18,7 +18,7 @@ Do not import the ApplicationSharedModule in the Application module if not requi
 
 It calls the required forRoot functions of imported modules. It also imports its children modules
 
-### Tips
+#### Tips
 
 Directly import all children modules from the shared module will make the work with shared module easier. By just importing the bulky shared module you will have all the required ressources you need.
 Never use IoC using the shared module providers. Let do it in modules that will use them.
